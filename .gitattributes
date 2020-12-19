@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import os
+
+for subdir, dirs, files in os.walk(r'C:\Users\admin'):
+    for filename in files:
+        filepath = subdir + os.sep + filename
+            print (filepath)
+			guess = mimetype.guess_extension(filepath)
+			
+			print(guess)
+			
